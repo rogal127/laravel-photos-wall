@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Photo;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $photos = Photo::paginate(10);
+    return view('welcome', ['photos' => $photos]);
 });
+
+Route::get('/dodaj-zdjecie', [PhotoController::class, 'add'])->name('addPhoto');
+Route::post('/store-photo', [PhotoController::class, 'store'])->name('storePhoto');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

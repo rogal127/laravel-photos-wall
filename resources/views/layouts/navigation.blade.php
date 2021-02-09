@@ -41,7 +41,15 @@
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Logout') }}
+                                Wyloguj
+                            </x-dropdown-link>
+                        </form>
+
+                        <form method="GET" action="{{ route('addPhoto') }}">
+                            <x-dropdown-link :href="route('addPhoto')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                Dodaj zdjęcie
                             </x-dropdown-link>
                         </form>
                     </x-slot>

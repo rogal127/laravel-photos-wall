@@ -1,0 +1,41 @@
+img {
+    width: 90vw;
+    border-radius: 5px;
+}
+main {
+    padding: 5vw;
+}
+
+.react {
+    height: 8vh;
+    line-height: 8vh;
+    /* background-color: #fff; */
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    padding-left: 4vw;
+    float: left;
+    width: 90vw;
+
+}
+
+.react i:last-child{
+    float: right;
+    clear: both;
+    line-height: 8vh;
+    padding-right: 4vw;
+}
+
+.react i:nth-child(1), .react i:nth-child(2) {
+    /* color: rgb(75, 131, 163); */
+    background: -webkit-linear-gradient(45deg, rgb(75, 131, 163) , #056e70);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.react i:nth-child(3){
+    color: rgb(160, 51, 51);
+    background: -webkit-linear-gradient(45deg,rgb(160, 51, 51) , rgb(128, 24, 24));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

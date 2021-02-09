@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #BED8D4;
+    background-image: linear-gradient(to bottom right,  #BED8D4 , #0e898b);
+}
+
+#menu {
+    display: none;
+    width: 100vw;
+    height: 92vh;
+    background-color:
+    rgba(120, 213, 213, .7);
+    z-index: 1;
+    top: 8vh;
+    position: absolute;
+}
+
+
+
+Nav{
+    height: 8vh;
+    width: 100vw;
+    background-color: #fff;
+    position: absolute;
+}
+
+
+#allNav {
+    /* background-color: rgb(105, 49, 49); */
+    width: 6vh;
+    height: 6vh;
+    margin: 1vh;
+    float: right;
+    font-size: 5.5vh;
+    line-height: 6vh;
+}
+
+
+main {
+    position: relative;
+    top: 8vh;
+    overflow: scroll ;
+    width: 100vw;
+    height: 92vh;
+
+
+}
+
+.menuPoints{
+    text-transform: uppercase;
+    font-size: 36px;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: #0e898b 0.5vh solid;
+    border-bottom: #0e898b 0.5vh solid;
+    /* border-radius: 10px; */
+    line-height: 10vh;
+    margin-top: 2vh;
+    /* opacity: 100%; */
+    background-color: rgba(14, 137, 139, .5);
+    line-height: 10vh;
+}
+.menuPoints a{
+    color: black;
+    line-height: 10vh;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 4vh;
+    
+}
+
+.menuPoints a i{
+    line-height: 10vh;
+}
+
+footer {
+    clear: both;
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.foot h1 {
+    border-bottom: 2px solid black;
+    margin-top: 4vh;
+}
+.foot p {
+    font-size: 1.2em;
+    margin-top: 1vh;
+    color: black;
+}
+.foot a {
+    text-decoration: none;
+}
+
+#Partn img {
+
+    width: 25vw;
+}
+
+#img {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

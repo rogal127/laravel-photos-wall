@@ -1,0 +1,40 @@
+main {
+    padding-top: 5vw;
+}
+
+img {
+    width: 100vw;
+}
+
+#rest{
+    padding: 5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#user p {
+    margin-left: 2vw;
+}
+
+#title{
+    margin-bottom: 2vh;
+}
+
+#td{
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+#descript{
+    text-align: justify;
+}
+footer{
+    padding: 5vw;
+}

@@ -30,6 +30,12 @@
                 @else
                     <div class="menuPoints"><a href="https://www.youtube.com/" target="_blank"><i class="zmdi zmdi-plus-circle"></i> Dodaj <i class="zmdi zmdi-plus-circle"></i></a></div>
                     <div class="menuPoints"><a href=""><i class="zmdi zmdi-account-circle"></i> Konto <i class="zmdi zmdi-account-circle"></i></a></div>
+                    <div class="menuPoints">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <i class="zmdi zmdi-account-circle"></i>>Wyloguj<i class="zmdi zmdi-account-circle"></i>
+                        </form>
+                    </div>
                 @endguest
                 <div class="menuPoints"><a href=""><i class="zmdi zmdi-favorite"></i> Ulubione <i class="zmdi zmdi-favorite"></i></a></div>
                 <div class="menuPoints"><a href=""><i class="zmdi zmdi-file-text"></i> Regulamin <i class="zmdi zmdi-file-text"></i></a></div>

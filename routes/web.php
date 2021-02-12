@@ -2,6 +2,7 @@
 
 use App\Models\Photo;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PhotoController;
 
 /*
 |--------------------------------------------------------------------------

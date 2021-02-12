@@ -28,12 +28,14 @@
                     <div class="menuPoints"><a href="/login"><i class="zmdi zmdi-thumb-up"></i>Zaloguj<i class="zmdi zmdi-thumb-up"></i></a></div>
                     <div class="menuPoints"><a href="/register"><i class="zmdi zmdi-thumb-down"></i>Zarejestruj<i class="zmdi zmdi-thumb-down"></i></a></div>
                 @else
-                    <div class="menuPoints"><a href="https://www.youtube.com/" target="_blank"><i class="zmdi zmdi-plus-circle"></i> Dodaj <i class="zmdi zmdi-plus-circle"></i></a></div>
+                    <div class="menuPoints"><a href="/dodaj-zdjecie" target="_blank"><i class="zmdi zmdi-plus-circle"></i> Dodaj <i class="zmdi zmdi-plus-circle"></i></a></div>
                     <div class="menuPoints"><a href=""><i class="zmdi zmdi-account-circle"></i> Konto <i class="zmdi zmdi-account-circle"></i></a></div>
                     <div class="menuPoints">
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <i class="zmdi zmdi-account-circle"></i>>Wyloguj<i class="zmdi zmdi-account-circle"></i>
+                            <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                        this.closest('form').submit();">Wyloguj</a>
                         </form>
                     </div>
                 @endguest

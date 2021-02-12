@@ -116,3 +116,85 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+#login {
+
+    width: 100vw;
+    height: 92vh;
+    background-color:
+    rgba(120, 213, 213, .7);
+    padding: 10vw;
+    box-sizing: border-box;
+}
+
+ 
+
+.text{
+
+    width: 80vw;
+
+    height: 8vh;
+
+}
+
+ 
+
+input{
+
+    margin-bottom: 5vh;
+
+    border: #0e898b 0.5vh solid;
+
+    border-radius: 5px;
+
+    background-color: rgba(14, 137, 139, .5);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: black;
+
+    font-size: 20px;
+
+    text-align: center;
+
+}
+
+ 
+
+input:focus{
+
+    background-color:  rgba(255, 255, 255, 0.3);
+
+}
+
+ 
+
+#submit{
+
+    font-weight: 700;
+
+    width: 20vw;
+
+    height: 8vh;
+
+    margin-left: 30vw;
+
+    margin-right: 30vw;
+
+}
+
+ 
+
+label{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: black;
+
+    font-size: 30px;
+
+    text-align: left;
+
+    font-weight: 700;
+
+}

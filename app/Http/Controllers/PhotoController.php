@@ -13,6 +13,13 @@ class PhotoController extends Controller
         return view('photo.add');
     }
 
+    public function show($id)
+    {
+        $photo = Photo::find($id);
+
+        return view('photo.show', ['photo' => $photo]);
+    }
+
     public function store(Request $request)
     {
         if (!empty($request->image)) {

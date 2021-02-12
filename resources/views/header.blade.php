@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('style/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="{{asset('style/toIndex.css')}}">
+    <link rel="stylesheet" href="{{asset('style/toPhoto.css')}}">
     <meta name="author" content="Awokado">
     <meta name="description" content="Aplikacja internetowa do publikowania zdjęć stworzona dla mieszkańców gminy Swidnica ">
     <title>Fotoportal Swidnica</title>
@@ -29,7 +30,7 @@
                     <div class="menuPoints"><a href="/register"><i class="zmdi zmdi-thumb-down"></i>Zarejestruj<i class="zmdi zmdi-thumb-down"></i></a></div>
                 @else
                     <div class="menuPoints"><a href="/dodaj-zdjecie" target="_blank"><i class="zmdi zmdi-plus-circle"></i> Dodaj <i class="zmdi zmdi-plus-circle"></i></a></div>
-                    <div class="menuPoints"><a href=""><i class="zmdi zmdi-account-circle"></i> Konto <i class="zmdi zmdi-account-circle"></i></a></div>
+                    <!-- <div class="menuPoints"><a href=""><i class="zmdi zmdi-account-circle"></i> Konto <i class="zmdi zmdi-account-circle"></i></a></div> -->
                     <div class="menuPoints">
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf

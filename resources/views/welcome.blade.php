@@ -1,7 +1,7 @@
 @include('header')
     @foreach($photos as $photo)
         <div class="Photo">
-            <img src="{{asset("images/$photo->path")}}" alt="">
+            <a href="/zdjecie/{{$photo->id}}"><img src="{{asset("images/$photo->path")}}" alt=""></a>
             <div class="react">
                 <i class="zmdi zmdi-thumb-up"></i>
                 <i class="zmdi zmdi-thumb-down"></i>

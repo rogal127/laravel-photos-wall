@@ -16,10 +16,11 @@ use App\Http\Controllers\PhotoController;
 */
 
 Route::get('/', function () {
-    $photos = Photo::paginate(10);
+    $photos = Photo::orderBy('created_at', 'DESC')->paginate(10);
     return view('welcome', ['photos' => $photos]);
 });
 
+Route::get('/zdjecie/{id}', [PhotoController::class, 'show']);
 Route::get('/dodaj-zdjecie', [PhotoController::class, 'add'])->name('addPhoto');
 Route::post('/store-photo', [PhotoController::class, 'store'])->name('storePhoto');
 

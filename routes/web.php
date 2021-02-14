@@ -21,11 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/zdjecie/{id}', [PhotoController::class, 'show']);
-Route::get('/dodaj-zdjecie', [PhotoController::class, 'add'])->name('addPhoto');
-Route::post('/store-photo', [PhotoController::class, 'store'])->name('storePhoto');
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/dodaj-zdjecie', [PhotoController::class, 'add'])->middleware(['auth'])->name('addPhoto');
+Route::post('/store-photo', [PhotoController::class, 'store'])->middleware(['auth'])->name('storePhoto');
 
 require __DIR__.'/auth.php';

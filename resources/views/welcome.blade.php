@@ -1,4 +1,5 @@
 @include('header')
+    <link rel="stylesheet" href="{{asset('style/toIndex.css')}}">
     @foreach($photos as $photo)
         <div class="Photo">
             <a href="/zdjecie/{{$photo->id}}"><img src="{{asset("images/$photo->path")}}" alt=""></a>

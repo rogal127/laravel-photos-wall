@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('style/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="{{asset('style/toIndex.css')}}">
-    <link rel="stylesheet" href="{{asset('style/toPhoto.css')}}">
     <meta name="author" content="Awokado">
     <meta name="description" content="Aplikacja internetowa do publikowania zdjęć stworzona dla mieszkańców gminy Swidnica ">
     <title>Fotoportal Swidnica</title>

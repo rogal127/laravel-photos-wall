@@ -1,4 +1,5 @@
 @include('header')
+<link rel="stylesheet" href="{{asset('style/toPhoto.css')}}">
 <img src="{{asset("images/$photo->path")}}" alt="">
 <div id="rest">
     <div id="td">

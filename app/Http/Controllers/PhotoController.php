@@ -24,7 +24,8 @@ class PhotoController extends Controller
     {
         if (!empty($request->image)) {
             $photo = new Photo;
-            $photo->description = $request->description;
+            $photo->title = isset($request->title) ? $request->title : '';
+            $photo->description = isset($request->description) ? $request->description : '';
             $imageName = time().'.'.$request->image->extension();  
             $request->image->move(public_path('images'), $imageName);
             $photo->path = $imageName;

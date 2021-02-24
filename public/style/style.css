@@ -8,7 +8,6 @@
 body{
     height: 100vh;
     background-color: #BED8D4;
-    background-image: linear-gradient(to bottom right,  #BED8D4 , #0e898b);
 }
 
 #menu {

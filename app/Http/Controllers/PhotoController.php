@@ -30,6 +30,7 @@ class PhotoController extends Controller
             $request->image->move(public_path('images'), $imageName);
             $photo->path = $imageName;
             $photo->user_id = Auth::user()->id;
+            $photo->accepted = 0;
             $photo->save();
         }
 

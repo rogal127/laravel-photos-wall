@@ -13,7 +13,7 @@
 
     <header>
         <nav id="nav">
-            <div id="logo" style="float: left; line-height: 8vh;margin-left: 2vh; font-size: 5.5vh;"><i class="zmdi zmdi-camera"></i></div>
+            <a href="/"><div id="logo" style="float: left; line-height: 8vh;margin-left: 2vh; font-size: 5.5vh;"><i class="zmdi zmdi-camera"></i></div></a>
             
             <h1 style="float: left; line-height: 8vh;margin-left: 2vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 900;">Świdnicki Fotoportal</h1>
         <div id="allNav" onclick="dspMenu()">
@@ -25,7 +25,6 @@
                 <div class="menuPoints"><a href="/"><i class="zmdi zmdi-home"></i> Dom <i class="zmdi zmdi-home"></i></a></div>
                 @guest
                     <div class="menuPoints"><a href="/login"><i class="zmdi zmdi-thumb-up"></i>Zaloguj<i class="zmdi zmdi-thumb-up"></i></a></div>
-                    <div class="menuPoints"><a href="/register"><i class="zmdi zmdi-thumb-down"></i>Zarejestruj<i class="zmdi zmdi-thumb-down"></i></a></div>
                 @else
                     <div class="menuPoints"><a href="/dodaj-zdjecie" target="_blank"><i class="zmdi zmdi-plus-circle"></i> Dodaj <i class="zmdi zmdi-plus-circle"></i></a></div>
                     <!-- <div class="menuPoints"><a href=""><i class="zmdi zmdi-account-circle"></i> Konto <i class="zmdi zmdi-account-circle"></i></a></div> -->
@@ -37,8 +36,8 @@
                                         this.closest('form').submit();">Wyloguj</a>
                         </form>
                     </div>
+                    <div class="menuPoints"><a href=""><i class="zmdi zmdi-favorite"></i> Ulubione <i class="zmdi zmdi-favorite"></i></a></div>
                 @endguest
-                <div class="menuPoints"><a href=""><i class="zmdi zmdi-favorite"></i> Ulubione <i class="zmdi zmdi-favorite"></i></a></div>
                 <div class="menuPoints"><a href=""><i class="zmdi zmdi-file-text"></i> Regulamin <i class="zmdi zmdi-file-text"></i></a></div>
             </div>
         </nav>

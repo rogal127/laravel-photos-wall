@@ -16,12 +16,15 @@ use App\Http\Controllers\PhotoController;
 */
 
 Route::get('/', function () {
-    $photos = Photo::orderBy('created_at', 'DESC')->paginate(10);
+    $photos = Photo::orderBy('created_at', 'DESC')->paginate(2);
     return view('welcome', ['photos' => $photos]);
 });
 
 Route::get('/zdjecie/{id}', [PhotoController::class, 'show']);
 Route::get('/dodaj-zdjecie', [PhotoController::class, 'add'])->middleware(['auth'])->name('addPhoto');
 Route::post('/store-photo', [PhotoController::class, 'store'])->middleware(['auth'])->name('storePhoto');
+
+Route::post('/akceptuj-zdjecie', [PhotoController::class, 'accept'])->middleware(['auth']);
+Route::post('/akceptuj-zdjecia', [PhotoController::class, 'photosToAcceptList'])->middleware(['auth']);
 
 require __DIR__.'/auth.php';

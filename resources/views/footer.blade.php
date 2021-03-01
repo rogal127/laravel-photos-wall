@@ -1,13 +1,4 @@
 <footer>
-    <div id="Tech" class="foot">
-        <h1>Użyte technologie</h1>
-        <a href=""><p>web-app-capable</p></a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share"><p>web-share-api</p></a>
-        <a href="http://zavoloklom.github.io/material-design-iconic-font/icons.html"><p>Material Design Iconic Font</p></a>
-        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"><p>Flexbox</p></a>
-        <a href="https://fonts.google.com/"><p>Google-Fonts</p></a>
-
-    </div>
     <div id="Auth" class="foot">
         <h1>Autorzy</h1>
         <p>Programista:</p>

@@ -34,6 +34,14 @@ Route::get('/akceptuj-zdjecie/{id}', function($id) {
     }
 })->middleware(['auth']);
 
+Route::get('/odrzuc-zdjecie/{id}', function($id) {
+    if (Auth::user()->name == 'admin' || Auth::user()->name == 'rogal127') {
+        $photo = Photo::find($id);
+        $photo->delete();
+        return back();
+    }
+})->middleware(['auth']);
+
 Route::get('/akceptuj-zdjecia', function() {
     if (Auth::user()->name == 'admin' || Auth::user()->name == 'rogal127') {
         $photos = Photo::where('accepted', 0)->orderBy('created_at', 'DESC')->paginate(20);

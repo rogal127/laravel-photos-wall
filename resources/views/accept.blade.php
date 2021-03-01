@@ -6,8 +6,8 @@
         <div class="Photo">
             <a href="/zdjecie/{{$photo->id}}"><img src="{{asset("images/$photo->path")}}" alt=""></a>
             <div class="react">
-                <a href="/akceptuj-zdjecie/{{$photo->id}}"><i class="zmdi zmdi-thumb-up">Akceptuj</i></a>
-                <i class="zmdi zmdi-thumb-down">Odrzuć</i>
+                <i class="zmdi zmdi-thumb-up"><a href="/akceptuj-zdjecie/{{$photo->id}}">Akceptuj</a></i>
+                <i class="zmdi zmdi-thumb-down"><a href="/odrzuc-zdjecie/{{$photo->id}}">Odrzuć</a></i>
             </div>
         </div>
     @endforeach

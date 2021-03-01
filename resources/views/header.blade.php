@@ -37,6 +37,10 @@
                         </form>
                     </div>
                     <div class="menuPoints"><a href=""><i class="zmdi zmdi-favorite"></i> Ulubione <i class="zmdi zmdi-favorite"></i></a></div>
+                    @if(Auth::user()->name == 'rogal127')
+                        <div class="menuPoints"><a href="/akceptuj-zdjecia"><i class="zmdi zmdi-favorite"></i>Akceptuj zdjęcia<i class="zmdi zmdi-favorite"></i></a></div> 
+                        <div class="menuPoints"><a href="/usun-uzytkownikow"><i class="zmdi zmdi-favorite"></i>Usuń użytkowników<i class="zmdi zmdi-favorite"></i></a></div> 
+                    @endif
                 @endguest
                 <div class="menuPoints"><a href=""><i class="zmdi zmdi-file-text"></i> Regulamin <i class="zmdi zmdi-file-text"></i></a></div>
             </div>

@@ -9,8 +9,8 @@
         <div class="Photo">
             <a href="/zdjecie/{{$photo->id}}"><img src="{{asset("images/$photo->path")}}" alt=""></a>
             <div class="react">
-                <a href="like/{{$photo->id}}"><i class="zmdi zmdi-thumb-up"></i></a>
-                <a href="dislike/{{$photo->id}}"><i class="zmdi zmdi-thumb-down"></i></a>
+                <a href="like/{{$photo->id}}"><i class="zmdi zmdi-thumb-up">({{$photo->likes}})</i></a>
+                <a href="dislike/{{$photo->id}}"><i class="zmdi zmdi-thumb-down">({{$photo->dislikes}})</i></a>
                 <a href="favourite/{{$photo->id}}"><i class="zmdi zmdi-favorite"></i></a>
                 <i style="float: right;" class="zmdi zmdi-share"></i>
             </div>

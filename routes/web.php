@@ -40,6 +40,27 @@ Route::get('/ulubione', function() {
     return view('favourites', ['photos' => $photos]);
 })->middleware(['auth']);
 
+Route::get('/like/{id}', function($id) {
+    $photo = Photo::find($id);
+
+    if (!empty($photo)) {
+        $photo->likes += 1;
+        $photo->save();
+    }
+
+    return back();
+});
+
+Route::get('/dislike/{id}', function($id) {
+    $photo = Photo::find($id);
+
+    if (!empty($photo)) {
+        $photo->dislikes += 1;
+        $photo->save();
+    }
+
+    return back();
+});
 
 Route::get('/favourite/{id}', function($id) {
     $favv = FavouritePhoto::where('photo_id', $id)->where('user_id', Auth::user()->id)->first();

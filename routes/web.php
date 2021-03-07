@@ -16,6 +16,9 @@ use App\Http\Controllers\PhotoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/regulamin', function() {
+    return view('terms');
+});
 
 Route::get('/', function () {
     $photos = Photo::where('accepted', 1)->orderBy('created_at', 'DESC')->paginate(20);

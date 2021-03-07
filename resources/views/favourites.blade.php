@@ -6,15 +6,12 @@
 
     <link rel="stylesheet" href="{{asset('style/toIndex.css')}}">
     @foreach($photos as $photo)
+        {{$path = $photo->photo->path}}
         <div class="Photo">
-            <a href="/zdjecie/{{$photo->id}}"><img src="{{asset("images/$photo->path")}}" alt=""></a>
+            <a href="/zdjecie/{{$photo->photo->id}}"><img src="{{asset("images/$path")}}" alt=""></a>
             <div class="react">
-                <a href="like/{{$photo->id}}"><i class="zmdi zmdi-thumb-up"></i></a>
-                <a href="dislike/{{$photo->id}}"><i class="zmdi zmdi-thumb-down"></i></a>
-                <a href="favourite/{{$photo->id}}"><i class="zmdi zmdi-favorite"></i></a>
                 <i style="float: right;" class="zmdi zmdi-share"></i>
             </div>
         </div>
     @endforeach
-    {{ $photos->links('pagination::bootstrap-4') }}
 @include('footer')

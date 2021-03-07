@@ -19,10 +19,8 @@ main {
 }
 
 .react i:last-child{
-    float: right;
     clear: both;
     line-height: 8vh;
-    padding-right: 4vw;
 }
 
 .react i:nth-child(1), .react i:nth-child(2) {

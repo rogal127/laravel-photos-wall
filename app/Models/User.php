@@ -46,4 +46,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Photo::class);
     }
+
+    public function favourite(): HasMany
+    {
+        return $this->hasMany(FavouritePhoto::class);
+    }
 }

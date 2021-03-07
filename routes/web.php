@@ -20,6 +20,10 @@ Route::get('/regulamin', function() {
     return view('terms');
 });
 
+Route::get('/polityka-prywatnosci', function() {
+    return view('private_policy');
+});
+
 Route::get('/', function () {
     $photos = Photo::where('accepted', 1)->orderBy('created_at', 'DESC')->paginate(20);
     return view('welcome', ['photos' => $photos]);

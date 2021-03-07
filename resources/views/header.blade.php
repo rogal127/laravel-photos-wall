@@ -43,6 +43,7 @@
                     @endif
                 @endguest
                 <div class="menuPoints"><a href="/regulamin"><i class="zmdi zmdi-file-text"></i> Regulamin <i class="zmdi zmdi-file-text"></i></a></div>
+                <div class="menuPoints"><a href="/polityka-prywatnosci"><i class="zmdi zmdi-file-text"></i> Polityka prywatności <i class="zmdi zmdi-file-text"></i></a></div>
             </div>
         </nav>
         

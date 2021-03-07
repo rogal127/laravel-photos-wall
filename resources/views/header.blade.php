@@ -22,7 +22,8 @@
             <div id="menu">
                 <!-- Tu treść menu -->
 
-                <div class="menuPoints"><a href="/"><i class="zmdi zmdi-home"></i> Dom <i class="zmdi zmdi-home"></i></a></div>
+                <div class="menuPoints"><a href="/o-tworcach"><i class="zmdi zmdi-home"></i> O twórcach aplikacji <i class="zmdi zmdi-home"></i></a></div>
+                <div class="menuPoints"><a href="/zasady"><i class="zmdi zmdi-home"></i> Zasady gry terenowej <i class="zmdi zmdi-home"></i></a></div>
                 @guest
                     <div class="menuPoints"><a href="/login"><i class="zmdi zmdi-thumb-up"></i>Zaloguj<i class="zmdi zmdi-thumb-up"></i></a></div>
                 @else

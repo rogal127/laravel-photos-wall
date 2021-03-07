@@ -25,6 +25,14 @@ Route::get('/polityka-prywatnosci', function() {
     return view('private_policy');
 });
 
+Route::get('/o-tworcach', function() {
+    return view('about');
+});
+
+Route::get('/zasady', function() {
+    return view('rules');
+});
+
 Route::get('/', function () {
     $photos = Photo::where('accepted', 1)->orderBy('created_at', 'DESC')->paginate(20);
     return view('welcome', ['photos' => $photos]);

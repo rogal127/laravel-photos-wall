@@ -13,7 +13,7 @@
 
     <header>
         <nav id="nav">
-            <a href="/"><div id="logo" style="float: left; margin-left: 2vh;"><img height="100px" src="{{asset('photos/logo.svg')}}"></div></a>
+            <a href="/"><div id="logo" style="float: left; margin-left: 2vh;"><main-img height="100px" src="{{asset('photos/logo.svg')}}"></div></a>
             
             <h1 style="float: left; line-height: 8vh;margin-left: 2vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 900;">Świdnicki Fotoportal</h1>
         <div id="allNav" onclick="dspMenu()">

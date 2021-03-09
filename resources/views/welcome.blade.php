@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{asset('style/toIndex.css')}}">
     @foreach($photos as $photo)
         <div class="Photo">
-            <a href="/zdjecie/{{$photo->id}}"><img src="{{asset("images/$photo->path")}}" alt=""></a>
+            <a href="/zdjecie/{{$photo->id}}"><img class="user-img" src="{{asset("images/$photo->path")}}" alt=""></a>
             <div class="react">
                 <a href="like/{{$photo->id}}"><i class="zmdi zmdi-thumb-up">({{$photo->likes}})</i></a>
                 <a href="dislike/{{$photo->id}}"><i class="zmdi zmdi-thumb-down">({{$photo->dislikes}})</i></a>

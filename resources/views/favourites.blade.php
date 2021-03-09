@@ -8,7 +8,7 @@
     @foreach($photos as $photo)
         {{$path = $photo->photo->path}}
         <div class="Photo">
-            <a href="/zdjecie/{{$photo->photo->id}}"><img src="{{asset("images/$path")}}" alt=""></a>
+            <a href="/zdjecie/{{$photo->photo->id}}"><img class="user-img" src="{{asset("images/$path")}}" alt=""></a>
             <div class="react">
                 <i style="float: right;" class="zmdi zmdi-share"></i>
             </div>
